@@ -1,5 +1,5 @@
 from Stack import Stack
-
+# import pytest
 class TestStack:
     '''Class Stack in Stack.py'''
 
@@ -51,7 +51,9 @@ class TestStack:
         assert(stk.full())
         assert(stk.size() == 1)
         assert(stk.pop() == 1)
+        # with pytest.raises(Exception):
         stk.push(1)
+        # with pytest.raises(Exception):
         stk.push(2)
         assert(stk.full())
         assert(stk.size() == 1)
